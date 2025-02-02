@@ -14,7 +14,7 @@ export default function App() {
         <TextInput
           style={styles.textInput}
           placeholder="Your course goal"
-          onChangeText={goalInputHandler()}
+          onChangeText={goalInputHandler}
         />
         <Button title="Add goal!" />
       </View>
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20,
     paddingTop: 50,
-    paddinghorizontal: 16,
+    paddingHorizontal: 16,
   },
   inputContainer: {
     flex: 1,
