@@ -13,7 +13,7 @@ export default function App() {
   function addGoalHandler() {
     setCourseGoals((currentCourseGoals) => [
       ...currentCourseGoals,
-      {text: enteredGoalText, key: Math.random().toString()}
+      {text: enteredGoalText, id: Math.random().toString()}
     ]);
   }
 
@@ -37,7 +37,9 @@ export default function App() {
             </View>
           );
         }}
-        keyExtractor={(item, index) => }
+        keyExtractor={(item, index) => {
+          return item.id;
+        }}
         alwaysBounceVertical={false}
         />
       </View>
